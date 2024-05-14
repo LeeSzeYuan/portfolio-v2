@@ -26,7 +26,6 @@ const skills = {
     ]
 };
 
-console.log(skills["data"][0][1]);
 const skillChangeBtn = document.querySelectorAll('.skill-change');
 const skillTitle = document.querySelector('.skills-area h2');
 const skillList = document.querySelector('.skills-list');
@@ -45,16 +44,42 @@ skillChangeBtn.forEach((button) => {
 })
 
 const observer = new IntersectionObserver((entries) => {
+    let n = 0;
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-            // entry.target.classList.remove('hidden');
-        } else {
-            entry.target.classList.remove('show');
-            // entry.target.classList.add('hidden');
-        }
+            // if (entry.target.classList.contains('card')) {
+            //     // setTimeout(() => {
+            //     //     entry.target.style.animation = `scroll-animate 1s ease-in-out forwards`;
+            //     // }, 500 * n);
+            //     // n += 1;
+            // } else {
+                entry.target.classList.add('show');
+            // }
+        }      
+        // else {
+        //     entry.target.classList.remove('show');
+        // }
     });
 });
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+const darkButton = document.getElementById('dark');
+const lightButton = document.getElementById('light');
+const body = document.body;
+
+const theme = localStorage.getItem('theme');
+if (theme) {
+    body.classList.add(theme);
+}
+
+darkButton.onclick = () => {
+    body.classList.replace('light','dark');
+    localStorage.setItem('theme', 'dark');
+};
+
+lightButton.onclick = () => {
+    body.classList.replace('dark','light');
+    localStorage.setItem('theme', 'light');
+};
