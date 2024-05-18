@@ -65,8 +65,8 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-const darkButton = document.getElementById('dark');
-const lightButton = document.getElementById('light');
+const lightDarkButton = document.getElementById('themeswitcher');
+// const lightButton = document.getElementById('light');
 const body = document.body;
 
 const theme = localStorage.getItem('theme');
@@ -74,12 +74,18 @@ if (theme) {
     body.classList.add(theme);
 }
 
-darkButton.onclick = () => {
-    body.classList.replace('light','dark');
-    localStorage.setItem('theme', 'dark');
+lightDarkButton.onclick = () => {
+    if (body.classList.contains('light')) {
+        body.classList.replace('light','dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        body.classList.replace('dark','light');
+        localStorage.setItem('theme', 'light');
+    }
+
 };
 
-lightButton.onclick = () => {
-    body.classList.replace('dark','light');
-    localStorage.setItem('theme', 'light');
-};
+// lightButton.onclick = () => {
+//     body.classList.replace('dark','light');
+//     localStorage.setItem('theme', 'light');
+// };
