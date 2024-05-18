@@ -133,8 +133,8 @@
     .work-experience {
         padding: 0.5rem 1rem;
         overflow-y: auto;
-        height: minmax(110vh, 150vh);
-        overflow-y: hidden;
+        min-height: 110vh;
+        max-height: 150vh;
     }
 
     .work-experience h1{

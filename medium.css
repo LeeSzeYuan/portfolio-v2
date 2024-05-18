@@ -9,13 +9,13 @@
     }
 
     .navbar {
-        height: 5vh; 
+        height: 6vh; 
         width:  100vw; 
         box-sizing: border-box;
     }
 
     .navbar-nav {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     .logo-text {
@@ -62,12 +62,13 @@
     .profile-picture-wrapper {
         flex: 1;
         margin:0;
+        margin-bottom: 1.5rem;
         padding: 0rem;
         height: 100%;
         width: 100%;
 
         display: flex;
-        align-items: center;
+        align-items: end;
         justify-content: center;
     }
 
@@ -75,11 +76,12 @@
         /* display: block; */
         height: 60%;
         width: 60%;
+        bottom: 5rem;
     }
 
 
     .short-intro-desc {
-        flex: 0.2;
+        flex: 0.1;
         margin: 0rem 1rem;
         margin-bottom: 3rem;;
         padding: 1rem;
@@ -91,7 +93,7 @@
     }
 
     .short-intro-desc h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .short-intro-desc span {
@@ -99,7 +101,7 @@
     }
 
     .short-intro-desc h2 {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .skills-area {
@@ -137,8 +139,9 @@
     .work-experience {
         padding: 0.5rem 1rem;
         overflow-y: auto;
-        height: minmax(110vh, 150vh);
-        overflow-y: hidden;
+        height: clamp(100vh, 100vh, 150vh);
+        /* min-height: 120vh;
+        max-height: 150vh; */
     }
 
     .work-experience h1{
@@ -217,7 +220,7 @@
 
     
     .card {
-        height: 18rem;
+        height: 65%;
         padding: 0.5rem;
         margin-right: 0rem;
         min-width: 12rem;

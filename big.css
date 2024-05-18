@@ -5,7 +5,7 @@
     }
 
     .navbar {
-        height: 5vh; 
+        height: 7vh; 
         width:  100vw; 
         box-sizing: border-box;
     }
@@ -51,12 +51,13 @@
 
     .short-intro {
         flex-direction: row;
+        flex-wrap: wrap;
         height: 90vh;
         padding-top: 5vh;
     }
 
     .profile-picture-wrapper {
-        flex: 1.5;
+        flex: 1;
         margin:0;
         padding: 0rem;
         height: 100%;
@@ -105,7 +106,7 @@
 
     .skills-area h2 {
         /* flex: 0.5; */
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 1rem 2rem;
     }
 
@@ -119,7 +120,7 @@
     }
 
     .skills-list li{
-        width: 100%;
+        width: 70%;
         height: 90%;
         margin: 1rem;
         padding: 0.5rem;
@@ -132,8 +133,7 @@
     .work-experience {
         padding: 0.5rem 1rem;
         overflow-y: auto;
-        min-height: 100vh;
-        max-height: 150vh;
+        height: clamp(60vh, 60vh, 100vh);
     }
 
     .work-experience h1{
@@ -212,11 +212,11 @@
 
     
     .card {
-        height: 18rem;
+        height: clamp(50%, 13rem, 13rem);;
         padding: 0.5rem;
         margin-right: 0rem;
-        min-width: 12rem;
-        max-width: 12rem;
+        min-width: 15rem;
+        max-width: 15rem;
     }
 
     .card:hover~.card {
@@ -236,12 +236,12 @@
     }
 
     .card-header i {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
     
     .author-avatar img {
-        height: 40px;
-        width: 50px;
+        height: 30px;
+        width: 40px;
     }
     
     .author-name {
@@ -258,12 +258,12 @@
     }
 
     .contact-list {
-        flex: 3;
+        flex: 2;
     }
 
     .email-card {
         flex: 1;
-        width: 90%;
+        width: 30%;
         height: 50%;
     }
 
