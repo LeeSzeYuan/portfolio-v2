@@ -1,0 +1,273 @@
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+    .button {
+        font-size: 1.0rem;
+        padding: .575rem 0.875rem;
+    }
+
+    .navbar {
+        height: 7vh; 
+        width:  100vw; 
+        box-sizing: border-box;
+    }
+
+    .navbar-nav {
+        font-size: 1rem;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .homepage {
+        padding-left: 0.2rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .nav-item {
+        padding: 0 0.5rem;
+    }
+
+    .nav-item.has-dropdown {
+        margin-left: auto;
+        margin-right: 1rem;
+        padding: 0rem;
+    }
+
+    .theme-dropdown {
+        height: 4rem;
+        width: 100px;
+    
+        padding: 0.3rem;
+        margin-top: 1rem;
+    
+        transform: translateY(80%) translateX(-90%);
+    }
+
+    .dropdown-item a::before{
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .short-intro {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 90vh;
+        padding-top: 5vh;
+    }
+
+    .profile-picture-wrapper {
+        flex: 1;
+        margin:0;
+        padding: 0rem;
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-picture {
+        /* display: block; */
+        height: 60%;
+        width: 60%;
+    }
+
+
+    .short-intro-desc {
+        flex: 1;
+        margin: 0rem 1rem;
+        margin-bottom: 3rem;;
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .short-intro-desc i {
+        font-size: 1rem;
+    }
+
+    .short-intro-desc h1 {
+        font-size: 3rem;
+    }
+
+    .short-intro-desc span {
+        font-size: 1rem;
+    }
+
+    .short-intro-desc h2 {
+        font-size: 2rem;
+    }
+
+    .skills-area {
+        flex: 0.5;
+        padding:0rem 1rem;
+    }
+
+    .skills-area h2 {
+        /* flex: 0.5; */
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+    }
+
+    .skills-list {
+        padding: 0rem 0.5rem;
+        margin: 0rem 0.5rem;
+        gap: 1.5rem 1.5rem;
+        grid-auto-rows: minmax(150px, 1fr);
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+        overflow-x: auto;
+    }
+
+    .skills-list li{
+        width: 70%;
+        height: 90%;
+        margin: 1rem;
+        padding: 0.5rem;
+    
+    }    
+    .skills-list li span{
+        font-size: 1rem;
+    }
+
+    .work-experience {
+        padding: 0.5rem 1rem;
+        overflow-y: auto;
+        height: clamp(60vh, 60vh, 100vh);
+    }
+
+    .work-experience h1{
+        font-size: 1.5rem;
+    }
+
+    .experience-detail {
+        margin: 0.5rem 0.5rem;
+        padding: 1rem 0rem;
+        overflow-y: hidden;
+    }
+
+    .experience-detail article section{
+        flex: 0.5;
+        font-size: 0.75rem;
+        padding-right: 0.5rem;
+    }
+
+    .experience-detail article section i::after{
+        display: block;
+    }
+
+    .experience-detail article section div{
+        display: block;
+    }
+
+    .experience-detail article ul{
+        padding-left: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .experience-detail article ul li:nth-child(n+3) {
+        font-size: 0.8rem;
+    }
+
+    .experience-detail article ul li:nth-child(1){
+        font-size: 1.5rem;
+    }
+
+    .experience-detail article ul li:nth-child(2){
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .portfolio {
+        padding: 1rem 0rem 1rem 0.3rem;
+    }
+
+    .data-projects {
+        overflow-x: scroll;
+    }
+    
+    .web-projects {
+        overflow-x: auto;
+    }
+
+    .projects-cards {
+        padding-left: 0.3rem;
+        /* overflow-x: hidden; */
+    }
+
+    .projects-cards::-webkit-scrollbar {
+        height: 0.2rem;
+    }
+
+    .first-card {
+        min-width: 12rem;
+        max-width: 12rem;
+        height: 65%;
+        margin-right: 2rem;
+    }
+
+    .first-card .card-header {
+        font-size: 2rem;
+    }
+
+    
+    .card {
+        height: clamp(50%, 13rem, 13rem);;
+        padding: 0.5rem;
+        margin-right: 0rem;
+        min-width: 15rem;
+        max-width: 15rem;
+    }
+
+    .card:hover~.card {
+        transform: translateX(50px);
+    }
+    
+    .card:not(:nth-child(2)) {
+        margin-left: -50px;
+    }
+
+    .card-header {
+        padding-left: 0.5rem;
+    }
+
+    .card-header h2 {
+        font-size: 1rem;
+    }
+
+    .card-header i {
+        font-size: 0.5rem;
+    }
+    
+    .author-avatar img {
+        height: 30px;
+        width: 40px;
+    }
+    
+    .author-name {
+        font-size: 0.7rem;
+    }
+
+    footer {
+        padding: 1rem 4rem 2rem 4rem;
+        height: 50vh;
+    }
+
+    .contact {
+        flex-direction: row;
+    }
+
+    .contact-list {
+        flex: 2;
+    }
+
+    .email-card {
+        flex: 1;
+        width: 30%;
+        height: 50%;
+    }
+
+    .email-card svg {
+        height: 50%;
+    }
+}
